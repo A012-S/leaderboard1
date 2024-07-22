@@ -1,1 +1,31 @@
-index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leaderboard</h1>
+        <h4 align="center">Designed by Aarav Sharma</h4>
+        <div class="form">
+            <input type="text" id="playerName" placeholder="Player Name">
+            <input type="number" id="playerScore" placeholder="Score">
+            <button onclick="addPlayer()">Add Player</button>
+        </div>
+        <div class="leaderboard">
+            <h2>Top Players</h2>
+            <ul id="leaderboardList"></ul>
+            <div class="stats">
+                <p>Maximum Score: <span id="maxScore"> </span>  <span id="maxPlayer"> </span></p>
+                <p>Minimum Score: <span id="minScore"> </span>  <span id="minPlayer"> </span></p>
+                <p>Average Score: <span id="avgScore"> </span></p>
+            </div>
+            <div class="winner-message" id="winnerMessage"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
