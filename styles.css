@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ffecb3, #ffd54f);
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(to right, #ffffff, #e0f2f1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00796b;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 12px;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    font-size: 18px;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #004d40;
+}
+
+button {
+    padding: 12px;
+    background: linear-gradient(to right, #00796b, #004d40);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(to right, #004d40, #00796b);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.leaderboard {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: linear-gradient(to right, #f1f8e9, #dcedc8);
+    padding: 15px;
+    border: 2px solid #c8e6c9;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.delete-btn {
+    background: linear-gradient(to right, #e57373, #d32f2f);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 7px 12px;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background: linear-gradient(to right, #d32f2f, #e57373);
+}
+
+.stats {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #00796b;
+}
+
+.stats p {
+    margin: 8px 0;
+    padding: 10px;
+    background: linear-gradient(to right, #c8e6c9, #a5d6a7);
+    border-radius: 8px;
+}
+
+.winner-message {
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: #388e3c;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
