@@ -1,0 +1,33 @@
+// script.js
+
+// Array to store player data
+let players = [];
+
+// Function to add a player
+function addPlayer() {
+    const playerName = document.getElementById('playerName').value;
+    const playerScore = parseInt(document.getElementById('playerScore').value);
+
+    if (playerName && !isNaN(playerScore)) {
+        players.push({ name: playerName, score: playerScore });
+        document.getElementById('playerName').value = '';
+        document.getElementById('playerScore').value = '';
+        updateLeaderboard();
+    }
+}
+
+// Function to update the leaderboard
+function updateLeaderboard() {
+    // Sort players by score in descending order
+    players.sort((a, b) => b.score - a.score);
+
+    const leaderboardList = document.getElementById('leaderboardList');
+    leaderboardList.innerHTML = '';
+
+    // Display the sorted players
+    players.forEach(player => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span>${player.name}</span><span>${player.score}</span>`;
+        leaderboardList.appendChild(li);
+    });
+}
